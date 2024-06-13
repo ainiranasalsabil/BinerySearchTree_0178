@@ -117,5 +117,17 @@ public:
 
 int main()
 {
-	
+	BinaryTree x;
+	while (true)
+	{
+		cout << "\nMenu" << endl;
+		cout << "1. Implement insert operation" << endl;
+		cout << "2. Perform inorder trevesal" << endl;
+		cout << "3. Perform preorder trevesal" << endl;
+		cout << "4. Perform postorder trevesal" << endl;
+		cout << "5. Exit" << endl;
+		cout << "\n Enter your chois (1-5) : ";
+
+		
+	}
 };

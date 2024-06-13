@@ -128,6 +128,20 @@ int main()
 		cout << "5. Exit" << endl;
 		cout << "\n Enter your chois (1-5) : ";
 
+		char ch;
+		cin >> ch;
+		cout << endl;
+		switch (ch)
+		{
+		case '1':
+		{
+			cout << "Enter a word";
+			string word;
+			cin >> word;
+			x.insert(word);
+			break;
+		}
 		
+		}
 	}
 };

@@ -32,7 +32,8 @@ public:
 	{
 		Node* newNode = new Node(element, nullptr, nullptr); //Allocation memory for new node
 		newNode->info = element; //Assign value to the data field for ner node
-		
+		newNode->leftchild = nullptr; //Make the left child of the new node point to NULL
+		newNode->rightchild = nullptr; //Make the right child of the new node point to NULL
 
 		Node* parent = nullptr;
 		Node* currentNode = nullptr;
@@ -66,6 +67,21 @@ public:
 				currentNode = currentNode->leftchild;
 			else
 				currentNode = currentNode->rightchild;
+		}
+	}
+
+	void inorder(Node* ptr)
+	{
+		if (ROOT == nullptr)
+		{
+			cout << "Tree is empty" << endl;
+			return;
+		}
+		if (ptr != nullptr)
+		{
+			inorder(ptr->leftchild);
+			cout << ptr->info << " ";
+			inorder(ptr->rightchild);
 		}
 	}
 
